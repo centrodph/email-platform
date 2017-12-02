@@ -4,6 +4,7 @@
   "description": "google oauth project",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "dev": "nodemon index.js",
     "builddocs": "apidoc -i ./ -o apidoc/ -f \"./router/index.js\""
   },
