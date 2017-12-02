@@ -26,7 +26,8 @@ passport.deserializeUser((id, done) => {
 const googleOauthOptions = {
   clientID: config.googleClientID,
   clientSecret: config.googleClientSecret,
-  callbackURL: '/auth/google/callback'
+  callbackURL: '/auth/google/callback',
+  proxy: true //Fix proxy issue for heroku
 };
 const googleOauthAccess = (accessToken, refreshToken, profile, done) => {
   UserModel.findOne({ googleId: profile.id })
