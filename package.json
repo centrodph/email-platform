@@ -1,12 +1,11 @@
 {
-  "name": "oauth-google",
+  "name": "emailplatform",
   "version": "1.0.0",
-  "description": "google oauth project",
+  "description": "emailplatform project",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "builddocs": "apidoc -i ./ -o apidoc/ -f \"./router/index.js\""
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -28,9 +27,6 @@
     "passport-google-oauth20": "^1.0.0"
   },
   "devDependencies": {
-    "apidoc": "^0.17.6",
-    "http-proxy-agent": "^2.0.0",
-    "https-proxy-agent": "^2.1.0",
     "nodemon": "^1.12.1"
   }
 }
