@@ -1,0 +1,35 @@
+{
+  "name": "oauth-google",
+  "version": "1.0.0",
+  "description": "google oauth project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "builddocs": "apidoc -i ./ -o apidoc/ -f \"./router/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/centrodph/oauth-google.git"
+  },
+  "author": "Gerardo Perrucci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/centrodph/oauth-google/issues"
+  },
+  "homepage": "https://github.com/centrodph/oauth-google#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.0",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.6",
+    "http-proxy-agent": "^2.0.0",
+    "https-proxy-agent": "^2.1.0",
+    "nodemon": "^1.12.1"
+  }
+}
