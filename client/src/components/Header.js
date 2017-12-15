@@ -14,6 +14,9 @@ class Header extends Component {
           <li>
             <Link to="/dashboard">Dashboard</Link>
           </li>
+          <li>
+            <a href="/auth/google">Google Login</a>
+          </li>
         </ul>
       </div>
     );
