@@ -9,6 +9,13 @@ module.exports = app => {
    * @apiSuccess {Json} result.
    */
   app.get('/', static.homepageCtrl);
+ /**
+   * @api {get} / Home Page
+   * @apiGroup STATIC PAGES
+   *
+   * @apiSuccess {Json} result.
+   */
+  app.post('/', static.uploadCtrl);  
 
   /**
    * @api {get} /auth/google Init Google Auth Flow

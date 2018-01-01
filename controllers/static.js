@@ -9,6 +9,11 @@ module.exports.homepageCtrl = (req, res) => {
   res.send({ result: 'works' });
 };
 
+
+module.exports.uploadCtrl =()=>{
+  res.send({ result: req });
+}
+
 module.exports.loginCtrl = (req, res) => {
   const user = req.user;
   res.send({ result: 'LOGIN', user });
