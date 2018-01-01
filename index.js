@@ -4,6 +4,9 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
 
+var bodyParser = require('body-parser');
+
+
 //config
 const keys = require('./config/keys');
 require('./models/User');
@@ -20,6 +23,9 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 //routes
 routes(app);
 //createServer
