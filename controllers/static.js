@@ -11,7 +11,7 @@ module.exports.homepageCtrl = (req, res) => {
 
 
 module.exports.uploadCtrl = (req, res)=>{
-  res.send({ result: req });
+  res.send({ result: req.data });
 }
 
 module.exports.loginCtrl = (req, res) => {
