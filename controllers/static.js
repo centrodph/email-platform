@@ -10,7 +10,7 @@ module.exports.homepageCtrl = (req, res) => {
 };
 
 
-module.exports.uploadCtrl =()=>{
+module.exports.uploadCtrl = (req, res)=>{
   res.send({ result: req });
 }
 
